@@ -1,0 +1,10 @@
+{
+    "name": "GnosticTest",
+    "version": "0.0.1",
+    "title": "The title when selecting mod in mod panel",
+    "author": "WalleyMods",
+    "factorio_version": "0.17",
+    "contact": "test",
+    "homepage": "test",
+    "description": "First test mod"
+}
