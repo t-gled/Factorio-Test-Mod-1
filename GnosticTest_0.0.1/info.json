@@ -1,10 +1,10 @@
 {
     "name": "GnosticTest",
     "version": "0.0.1",
-    "title": "The title when selecting mod in mod panel",
-    "author": "WalleyMods",
-    "factorio_version": "0.17",
-    "contact": "test",
-    "homepage": "test",
+    "title": "First Test Mod",
+    "author": "kill_the_world_of_yaldabaoth",
+    "factorio_version": "1.1",
+    "contact": "Test",
+    "homepage": "Test",
     "description": "First test mod"
 }
