@@ -18,3 +18,5 @@ function iron(tableIn)
     player.insert(ironplatestack)
 
 end
+
+commands.add_command("give_iron_plates", "This command gives a stack of iron plates", iron)
