@@ -13,7 +13,7 @@ commands.add_command("test_message", "This is a test command that sends a messag
 function iron(tableIn)
 
     local player = game.get_player(tableIn.player_index)
-    local ironplatestack = {name="iron plate", count = 100}
+    local ironplatestack = {name="iron-plate", count = 100}
     
     player.insert(ironplatestack)
 
