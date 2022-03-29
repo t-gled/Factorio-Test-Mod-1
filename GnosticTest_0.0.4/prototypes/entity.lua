@@ -34,8 +34,8 @@ data:extend({
     animation = {
         filename = "__GnosticTest__/graphics/furnace/nuclear-furnace-base.png",
         priority = "high",
-        width = 32,
-        height = 32,
+        width = 129,
+        height = 100,
         frame_count = 1, --1 frame i.e no animation atm
         line_length = 1,
     },
