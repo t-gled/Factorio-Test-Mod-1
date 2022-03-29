@@ -1,7 +1,7 @@
 
 data:extend({
 
-  { -- nuclear furnace
+  { -- NUCLEAR FURNACE
     type = "furnace",
     name = "nuclear-furnace",
     icon = "__GnosticTest__/graphics/furnace/nuclear-furnace.png",
@@ -11,8 +11,8 @@ data:extend({
     minable = {hardness = 0.6, mining_time = 1.2, result = "nuclear-furnace"},
     max_health = 500,
     corpse = "steel-furnace-remnants",
-    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-    selection_box = {{-0.8, -1}, {0.8, 1}}, 
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}}, 
     --sounds
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -30,6 +30,7 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
+    --animations (1 frame = no animation atm)
     animation = {
         filename = "__GnosticTest__/graphics/furnace/nuclear-furnace.png",
         priority = "high",
@@ -38,6 +39,7 @@ data:extend({
         frame_count = 1, --1 frame i.e no animation atm
         line_length = 1,
     },
+    --crafting speed, smoke, lights and energy
     crafting_categories = {"smelting"},
     crafting_speed = 5.0,
     energy_source = {
