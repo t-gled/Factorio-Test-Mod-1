@@ -1,3 +1,6 @@
+29.03.22 Ver 0.0.3
+-added entity.lua, item.lua, locale and prototypes
+
 27.03.22 Ver 0.0.2
 -changed control.lua to test a print command
 -added a command that gives the player iron plates
