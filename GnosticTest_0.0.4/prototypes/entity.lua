@@ -14,9 +14,9 @@ data:extend{{
     dying_explosion = "steel-furnace-explosion",
     collision_box = {{-0.75, -0.75}, {0.75, 0.75}},
     selection_box = {{-1.0, 1.0}, {-1.0, 1.0}}, --2 wide and 2 tall (1 each direction from centre) same logic for collision box
-    vehicle_impact_sound = sounds.generic_impact,
-    open_sound = sounds.machine_open,
-    close_sound = sounds.machine_close,
+    --sounds
+    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
     working_sound =
     {
       sound =
@@ -31,14 +31,16 @@ data:extend{{
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
+    --animation
     animation = {
         filename = "__GnosticTest__/graphics/furnace/nuclear-furnace.png",
         priority = "high",
         width = 32,
         height = 32,
-        frame_count = 1,
+        frame_count = 1, --1 frame i.e no animation atm
         line_length = 1,
     },
+    --crafting and energy + animations like smoke and light
     crafting_categories = {"smelting"},
     crafting_speed = 5.0,
     energy_source = {
