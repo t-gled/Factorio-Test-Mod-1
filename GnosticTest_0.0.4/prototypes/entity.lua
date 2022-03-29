@@ -4,13 +4,13 @@ data:extend({
   { -- NUCLEAR FURNACE
     type = "furnace",
     name = "nuclear-furnace",
-    icon = "__GnosticTest__/graphics/furnace/nuclear-furnace.png",
+    icon = "__GnosticTest__/graphics/furnace/nuclear-furnace-icon.png",
     icon_size = 64, icon_mipmaps = 4,
     order = "c",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.6, mining_time = 1.2, result = "nuclear-furnace"},
     max_health = 500,
-    corpse = "steel-furnace-remnants",
+    corpse = "electric-furnace-remnants",
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}}, 
     --sounds
@@ -21,7 +21,7 @@ data:extend({
       sound =
       {
         {
-          filename = "__base__/sound/steel-furnace.ogg",
+          filename = "__base__/sound/electric-furnace.ogg",
           volume = 0.46
         }
       },
@@ -32,7 +32,7 @@ data:extend({
     },
     --animations (1 frame = no animation atm)
     animation = {
-        filename = "__GnosticTest__/graphics/furnace/nuclear-furnace.png",
+        filename = "__GnosticTest__/graphics/furnace/nuclear-furnace-base.png",
         priority = "high",
         width = 32,
         height = 32,
@@ -68,6 +68,12 @@ data:extend({
     energy_usage = (350).."kW",
     result_inventory_size = 1,
     source_inventory_size = 1,
+    --modules
+    module_specification =
+    {
+      module_slots = 2,
+      module_info_icon_shift = {0, 0.8}
+    },
   }
 
 }
