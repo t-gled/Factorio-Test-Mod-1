@@ -1,3 +1,9 @@
+29.03.22 Ver 0.0.41
+-NUCLEAR FURNACE animations and light effects
+
+29.03.22 Ver 0.0.4
+-added NUCLEAR FURNACE which uses nuclear fuel to smelt items rather quickly
+
 29.03.22 Ver 0.0.3
 -added entity.lua, item.lua, locale and prototypes
 
