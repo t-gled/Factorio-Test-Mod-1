@@ -11,9 +11,8 @@ data:extend({
     minable = {hardness = 0.6, mining_time = 1.2, result = "nuclear-furnace"},
     max_health = 500,
     corpse = "steel-furnace-remnants",
-    dying_explosion = "steel-furnace-explosion",
-    collision_box = {{-0.75, -0.75}, {0.75, 0.75}},
-    selection_box = {{-1.0, 1.0}, {-1.0, 1.0}}, --2 wide and 2 tall (1 each direction from centre) same logic for collision box
+    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
+    selection_box = {{-0.8, -1}, {0.8, 1}}, 
     --sounds
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
