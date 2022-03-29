@@ -31,7 +31,6 @@ data:extend{{
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    --animation
     animation = {
         filename = "__GnosticTest__/graphics/furnace/nuclear-furnace.png",
         priority = "high",
@@ -40,7 +39,6 @@ data:extend{{
         frame_count = 1, --1 frame i.e no animation atm
         line_length = 1,
     },
-    --crafting and energy + animations like smoke and light
     crafting_categories = {"smelting"},
     crafting_speed = 5.0,
     energy_source = {
