@@ -1,13 +1,15 @@
+data:extend{{
 
--- nuclear furnace
-
-local nuclear_furnace = {
+    {
+    -- nuclear furnace
     type = "item",
-    name = "nuclearfurnace",
-    icon = "__GnosticTest__/graphics/furnace/nuclearfurnace.png",
+    name = "nuclear-furnace",
+    icon = "__GnosticTest__/graphics/furnace/nuclear-furnace.png",
     icon_size = 32,
     subgroup = "other",
     stack_size = 50
-}
+    }
 
 
+
+}}
