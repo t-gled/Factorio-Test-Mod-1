@@ -3,7 +3,7 @@ local furnace = {
     type = "furnace",
     name = "nuclearfurnace",
     icon = "__GnosticTest__/graphics/furnace/nuclearfurnace.png",
-    icon_size = 32, icon_mipmaps = 4,
+    icon_size = 32,
     order = "c",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.6, mining_time = 1.2, result = "nuclearfurnace"},
