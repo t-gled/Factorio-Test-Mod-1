@@ -74,6 +74,7 @@ data:extend({
       module_slots = 2,
       module_info_icon_shift = {0, 0.8}
     },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
   }
 
 }
