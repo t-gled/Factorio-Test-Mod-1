@@ -1,5 +1,5 @@
 
-data:extend{{
+data:extend({
 
   { -- nuclear furnace
     type = "furnace",
@@ -69,4 +69,5 @@ data:extend{{
     source_inventory_size = 1,
   }
 
-}}
+}
+)

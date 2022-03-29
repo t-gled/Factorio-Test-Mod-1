@@ -1,4 +1,4 @@
-data:extend{{
+data:extend({
 
     {
         type = "item",
@@ -10,4 +10,5 @@ data:extend{{
         stack_size = 50
     },
 
-}}
+}
+)
