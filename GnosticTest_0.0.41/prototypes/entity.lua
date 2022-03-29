@@ -88,7 +88,7 @@ data:extend({
         fadeout = true,
         animation =
         {
-          filename = "__base__/graphics/entity/electric-furnace/nuclear-furnace-ground-light.png",
+          filename = "__GnosticTest__/graphics/furnace/nuclear-furnace-ground-light.png",
           blend_mode = "additive",
           width = 82,
           height = 64,
