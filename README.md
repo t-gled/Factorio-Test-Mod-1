@@ -13,7 +13,18 @@ Adds a bunch of random stuff created in the process of me learning LUA and the F
 ## Table of Contents
 * [About](#about)
   * [Built With](#built-with)
+* [Installation](#installation)
 * [License](#license)
+
+<!-- INSTALLATION -->
+## Installation
+To manually install this mod for `Factorio`, download this repository and place mod folder within:
+
+`C:\Users\<username>\AppData\Roaming\Factorio\mods\`
+
+The downloaded mod folder should now be within the above directory and titled `GnosticTest<version>`.
+
+Finally, load `Factorio` and ensure that the mod is enabled in-game. Enjoy!
 
 <!-- LICENSE -->
 ## License
