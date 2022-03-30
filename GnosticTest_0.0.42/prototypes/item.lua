@@ -9,6 +9,14 @@ data:extend({
         place_result = "nuclear-furnace",
         stack_size = 50
     },
-
+    {
+        type = "item",
+        name = "nuclear-inserter",
+        icon = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-icon.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "inserter",
+        place_result = "nuclear-inserter",
+        stack_size = 50
+    }
 }
 )
