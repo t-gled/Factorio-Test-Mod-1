@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
 [![MIT License][license-shield]][license-url]
 
 <!-- ABOUT -->
@@ -31,5 +32,7 @@ Finally, load `Factorio` and ensure that the mod is enabled in-game. Enjoy!
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/t-gled/Factorio-Test-Mod-1
+[contributors-url]: https://github.com/t-gled/Factorio-Test-Mod-1/graphs/contributors
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: https://choosealicense.com/licenses/mit
