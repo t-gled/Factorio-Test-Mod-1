@@ -158,7 +158,102 @@ data:extend({
       module_info_icon_shift = {0, 0.8}
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+  },
+  { --Nuclear Inserter
+    type = "inserter",
+    name = "nuclear-inserter",
+    icon = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-icon.png",
+    icon_size = 64, icon_mipmaps = 4,
+    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    stack = true,
+    minable = { mining_time = 0.1, result = "nuclear-inserter" },
+    max_health = 160,
+    corpse = "stack-inserter-remnants",
+    dying_explosion = "stack-inserter-explosion",
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 90
+      }
+    },
+    collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
+    selection_box = {{-0.4, -0.35}, {0.4, 0.45}},
+    pickup_position = {0, -1},
+    insert_position = {0, 1.2},
+    energy_per_movement = "20KJ",
+    energy_per_rotation = "20KJ",
+    energy_source = {
+      type = "burner",
+      fuel_inventory_size = 1,
+      fuel_category = "nuclear",
+      usage_priority = "secondary-input",
+      emissions_per_minute = 0.1,
+    },
+    energy_usage = (20).."kW",
+    extension_speed = 0.07,
+    rotation_speed = 0.2,
+    fast_replaceable_group = "inserter",
+    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+    working_sound = { filename = "__base__/sound/inserter-fast-5.ogg", volume = 0.75 },
+    hand_base_picture =
+    {
+      filename = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-hand-base.png",
+      priority = "extra-high",
+      width = 8,
+      height = 34,
+    },
+    hand_closed_picture =
+    {
+      filename = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-hand-closed.png",
+      priority = "extra-high",
+      width = 24,
+      height = 41,
+    },
+    hand_open_picture =
+    {
+      filename = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-hand-open.png",
+      priority = "extra-high",
+      width = 32,
+      height = 41,
+    },
+    hand_base_shadow =
+    {
+      filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-base-shadow.png",
+      priority = "extra-high",
+      width = 8,
+      height = 33,
+    },
+    hand_closed_shadow =
+    {
+      filename = "__base__/graphics/entity/stack-inserter/stack-inserter-hand-closed-shadow.png",
+      priority = "extra-high",
+      width = 24,
+      height = 41,
+    },
+    hand_open_shadow =
+    {
+      filename = "__base__/graphics/entity/stack-inserter/stack-inserter-hand-open-shadow.png",
+      priority = "extra-high",
+      width = 32,
+      height = 41,
+    },
+    platform_picture =
+    {
+      sheet =
+      {
+        filename = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-platform.png",
+        priority = "extra-high",
+        width = 46,
+        height = 46,
+        shift = {0.09375, 0},
+      }
+    },
+    circuit_wire_connection_points = circuit_connector_definitions["inserter"].points,
+    circuit_connector_sprites = circuit_connector_definitions["inserter"].sprites,
+    circuit_wire_max_distance = inserter_circuit_wire_max_distance,
+    default_stack_control_input_signal = inserter_default_stack_control_input_signal
   }
-
 }
 )
