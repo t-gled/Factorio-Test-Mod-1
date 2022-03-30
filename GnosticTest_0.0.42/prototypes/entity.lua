@@ -4,7 +4,7 @@ data:extend({
   { -- NUCLEAR FURNACE
     type = "furnace",
     name = "nuclear-furnace",
-    icon = "__GnosticTest__/graphics/furnace/nuclear-furnace-icon.png",
+    icon = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-icon.png",
     icon_size = 64, icon_mipmaps = 4,
     order = "c",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
@@ -12,7 +12,9 @@ data:extend({
     max_health = 500,
     corpse = "electric-furnace-remnants",
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}}, 
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    rotate = false,
+    orientation_to_variation = false,
     --sounds
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -35,7 +37,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__GnosticTest__/graphics/furnace/nuclear-furnace-base.png",
+          filename = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-base.png",
           priority = "high",
           width = 129,
           height = 100,
@@ -63,7 +65,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__GnosticTest__/graphics/furnace/nuclear-furnace-heater.png",
+              filename = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-heater.png",
               priority = "high",
               width = 25,
               height = 15,
@@ -72,7 +74,7 @@ data:extend({
               shift = {0.015625, 0.890625},
             },
             {
-              filename = "__GnosticTest__/graphics/furnace/nuclear-furnace-light.png",
+              filename = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-light.png",
               blend_mode = "additive",
               width = 104,
               height = 102,
@@ -88,7 +90,7 @@ data:extend({
         fadeout = true,
         animation =
         {
-          filename = "__GnosticTest__/graphics/furnace/nuclear-furnace-ground-light.png",
+          filename = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-ground-light.png",
           blend_mode = "additive",
           width = 82,
           height = 64,
