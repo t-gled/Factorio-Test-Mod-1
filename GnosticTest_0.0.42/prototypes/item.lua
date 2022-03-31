@@ -7,7 +7,8 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         subgroup = "smelting-machine",
         place_result = "nuclear-furnace",
-        stack_size = 50
+        stack_size = 50,
+        order = "d",
     },
     {
         type = "item",
@@ -16,7 +17,8 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         subgroup = "inserter",
         place_result = "nuclear-inserter",
-        stack_size = 50
+        stack_size = 50,
+        order = "h",
     }
 }
 )
