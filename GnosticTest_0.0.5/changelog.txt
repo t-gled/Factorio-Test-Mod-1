@@ -1,5 +1,9 @@
+31.03.22 Ver 0.0.5
+-Cinnabar resource, cinnabar ore item and autoplace
+-Nuclear inserter
+
 30.03.22 Ver 0.0.41
--Adavanced material processing 3 research and NUCLEAR FURNACE recipe
+-Advanced material processing 3 research and NUCLEAR FURNACE recipe
 
 29.03.22 Ver 0.0.41
 -NUCLEAR FURNACE animations and light effects
