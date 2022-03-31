@@ -28,7 +28,7 @@ data:extend({
             {type = "item", name = "cinnabar", amount = 10},
         },
         results = {
-            {type = "fluid", name ="liquid-mercury", amount = 30},
+            {type = "fluid", name ="liquid-mercury", amount = 60},
         },
         subgroup = "fluid-recipes",
         crafting_machine_tint = {

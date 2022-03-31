@@ -43,7 +43,7 @@ data:extend({
                 variation_count = 8,
             }
         },
-        map_color = {r = 255, g = 76, b = 73},
+        map_color = {r = 227, g = 66, b = 52},
     },
 
 }
