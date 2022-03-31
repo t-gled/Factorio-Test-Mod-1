@@ -12,9 +12,9 @@ data:extend({
     { --nuclear inserter
         type = "recipe",
         name = "nuclear-inserter",
-        enabled = "true",
+        enabled = "false",
         ingredients = {
-            {"stack-inserter", 1}, {"processing-unit", 1}, {"steel-plate", 15}, {"advanced-circuit, 15"}
+            {"stack-inserter", 1}, {"processing-unit", 1}, {"steel-plate", 15}, {"advanced-circuit", 15}
         },
         result = "nuclear-inserter",
     }
