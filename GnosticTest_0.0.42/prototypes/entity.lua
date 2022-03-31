@@ -159,6 +159,7 @@ data:extend({
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
   },
+
   { --Nuclear Inserter
     type = "inserter",
     name = "nuclear-inserter",
@@ -191,8 +192,8 @@ data:extend({
       emissions_per_minute = 0.1,
     },
     energy_usage = (20).."kW",
-    extension_speed = 0.07,
-    rotation_speed = 0.2,
+    extension_speed = 0.1,
+    rotation_speed = 0.1,
     fast_replaceable_group = "inserter",
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },

@@ -14,7 +14,7 @@ data:extend({
         name = "nuclear-inserter",
         enabled = "true",
         ingredients = {
-            {"stack-inserter", 1}, {"processing-unit", 5}, {"steel-plate", 25}
+            {"stack-inserter", 1}, {"processing-unit", 1}, {"steel-plate", 15}, {"advanced-circuit, 15"}
         },
         result = "nuclear-inserter",
     }
