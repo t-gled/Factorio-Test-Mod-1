@@ -4,7 +4,7 @@ data:extend({
   { -- NUCLEAR FURNACE
     type = "furnace",
     name = "nuclear-furnace",
-    icon = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-icon.png",
+    icon = "__GnosticTest__/graphics/entity/nuclear-furnace/nuclear-furnace-icon.png",
     icon_size = 64, icon_mipmaps = 4,
     order = "c",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
@@ -37,7 +37,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-base.png",
+          filename = "__GnosticTest__/graphics/entity/nuclear-furnace/nuclear-furnace-base.png",
           priority = "high",
           width = 129,
           height = 100,
@@ -65,7 +65,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-heater.png",
+              filename = "__GnosticTest__/graphics/entity/nuclear-furnace/nuclear-furnace-heater.png",
               priority = "high",
               width = 25,
               height = 15,
@@ -74,7 +74,7 @@ data:extend({
               shift = {0.015625, 0.890625},
             },
             {
-              filename = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-light.png",
+              filename = "__GnosticTest__/graphics/entity/nuclear-furnace/nuclear-furnace-light.png",
               blend_mode = "additive",
               width = 104,
               height = 102,
@@ -90,7 +90,7 @@ data:extend({
         fadeout = true,
         animation =
         {
-          filename = "__GnosticTest__/graphics/nuclear-furnace/nuclear-furnace-ground-light.png",
+          filename = "__GnosticTest__/graphics/entity/nuclear-furnace/nuclear-furnace-ground-light.png",
           blend_mode = "additive",
           width = 82,
           height = 64,
@@ -163,7 +163,7 @@ data:extend({
   { --Nuclear Inserter
     type = "inserter",
     name = "nuclear-inserter",
-    icon = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-icon.png",
+    icon = "__GnosticTest__/graphics/entity/nuclear-inserter/nuclear-inserter-icon.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     stack = true,
@@ -200,21 +200,21 @@ data:extend({
     working_sound = { filename = "__base__/sound/inserter-fast-5.ogg", volume = 0.75 },
     hand_base_picture =
     {
-      filename = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-hand-base.png",
+      filename = "__GnosticTest__/graphics/entity/nuclear-inserter/nuclear-inserter-hand-base.png",
       priority = "extra-high",
       width = 8,
       height = 34,
     },
     hand_closed_picture =
     {
-      filename = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-hand-closed.png",
+      filename = "__GnosticTest__/graphics/entity/nuclear-inserter/nuclear-inserter-hand-closed.png",
       priority = "extra-high",
       width = 24,
       height = 41,
     },
     hand_open_picture =
     {
-      filename = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-hand-open.png",
+      filename = "__GnosticTest__/graphics/entity/nuclear-inserter/nuclear-inserter-hand-open.png",
       priority = "extra-high",
       width = 32,
       height = 41,
@@ -244,7 +244,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__GnosticTest__/graphics/nuclear-inserter/nuclear-inserter-platform.png",
+        filename = "__GnosticTest__/graphics/entity/nuclear-inserter/nuclear-inserter-platform.png",
         priority = "extra-high",
         width = 46,
         height = 46,

@@ -3,7 +3,7 @@ data:extend({
     { --nuclear furnace
         type = "recipe",
         name = "nuclear-furnace",
-        enabled = "false",
+        enabled = false,
         ingredients = {
             {"steel-plate", 25}, {"refined-concrete", 20}, {"processing-unit", 5}
         },
@@ -12,7 +12,7 @@ data:extend({
     { --nuclear inserter
         type = "recipe",
         name = "nuclear-inserter",
-        enabled = "false",
+        enabled = false,
         ingredients = {
             {"stack-inserter", 1}, {"processing-unit", 1}, {"steel-plate", 15}, {"advanced-circuit", 15}
         },
@@ -37,6 +37,60 @@ data:extend({
             tertiary = {r = 74, g = 70, b = 70},
             quaternary = {r = 74, g = 61, b = 61},
         },
+    },
+    { --salt
+        type = "recipe",
+        name = "salt",
+        category = "chemistry",
+        enabled = true,
+        energy_required = 5,
+        ingredients = {
+            {type = "fluid", name = "water", amount = 100},
+            {type = "fluid", name = "liquid-mercury", amount = 5},
+        },
+        results = {
+            {type = "item", name = "salt", amount = 5},
+        },
+        subgroup = "fluid-recipes",
+        crafting_machine_tint = {
+            primary = {r = 205, g = 210, b = 202},
+            secondary = {r = 0, g = 105, b = 148},
+            tertiary = {r = 112, g = 128, b = 144},
+            quaternary = {r = 141, g = 166, b = 191},
+        },
+    },
+    { --molten salt
+        type = "recipe",
+        name = "molten-salt",
+        category = "chemistry",
+        enabled = true,
+        energy_required = 12,
+        ingredients = {
+            {type = "item", name = "salt", amount = 10},
+        },
+        results = {
+            {type = "fluid", name = "molten-salt", amount = 10},
+        },
+        subgroup = "fluid-recipes",
+        crafting_machine_tint = {
+            primary = {r = 255, g = 122, b = 50},
+            secondary = {r = 176, g = 32, b = 16},
+            tertiary = {r = 255, g = 90, b = 0},
+            quaternary = {r = 199, g = 36, b = 18},
+        },
+    },
+    { --molten salt fuel cell
+        type = "recipe",
+        name = "molten-salt-fuel-cell",
+        category = "crafting-with-fluid",
+        enabled = true,
+        energy_required = 20,
+        ingredients = {
+            {type = "fluid", name = "molten-salt", amount = 100},
+            {type = "item", name = "uranium-235", amount = 2},
+            {type = "item", name = "iron-plate", amount = 10},
+        },
+        result = "molten-salt-fuel-cell",
     },
 
 }

@@ -3,7 +3,7 @@ data:extend({
     { --cinnabar ore
         type = "resource",
         name = "cinnabar",
-        icon = "__GnosticTest__/graphics/cinnabar/cinnabar.png",
+        icon = "__GnosticTest__/graphics/resources/cinnabar/cinnabar.png",
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral"},
         order = "a-b-e",
@@ -35,7 +35,7 @@ data:extend({
         stage_counts = {1000, 600, 400, 200, 100, 50, 20, 1},
         stages = {
             sheet = {
-                filename = "__GnosticTest__/graphics/cinnabar/cinnabar-ore.png",
+                filename = "__GnosticTest__/graphics/resources/cinnabar/cinnabar-ore.png",
                 priority = "extra-high",
                 width = 64,
                 height = 64,
