@@ -88,9 +88,29 @@ data:extend({
         ingredients = {
             {type = "fluid", name = "molten-salt", amount = 100},
             {type = "item", name = "uranium-235", amount = 2},
+            {type = "item", name = "uranium-238", amount = 13},
             {type = "item", name = "iron-plate", amount = 10},
         },
         result = "molten-salt-fuel-cell",
+    },
+    { --depleted molten salt fuel cell reprocessing
+        type = "recipe",
+        name = "molten-salt-reprocessing",
+        energy_required = 75,
+        enabled = true,
+        category = "centrifuging",
+        ingredients = {
+            {"depleted-molten-salt-fuel-cell", 5},
+        },
+        icon = "__GnosticTest__/graphics/molten-salt-reprocessing.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "intermediate-product",
+        order = "s[molten-salt-fuel-cell]-b[molten-salt-reprocessing]",
+        main_product = "",
+        results = {
+            {"salt", 10}, {"uranium-238", 3},
+        },
+        allow_decomposition = false,
     },
 
 }

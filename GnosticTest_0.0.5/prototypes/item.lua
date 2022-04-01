@@ -81,7 +81,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         subgroup = "intermediate-product",
         stack_size = 50,
-        order = "h[depleted-molten-salt-fuel-cell",
+        order = "r[uranium-processing]-i[molten-salt-fuel-cell]",
     },
 
 }
