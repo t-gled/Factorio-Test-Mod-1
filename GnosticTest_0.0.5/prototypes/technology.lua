@@ -49,6 +49,70 @@ data:extend({
 
         }
     },
+    { --cinnabar processing / mercury refining
+        type = "technology",
+        name="cinnabar-processing",
+        icon_size = 256, icon_mipmaps = 4,
+        icon = "__GnosticTest__/graphics/technology/cinnabar-processing.png",
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "liquid-mercury",
+            },
+        },
+        prerequisites = {"oil-processing", "advanced-material-processing"},
+        unit = {
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+            },
+            time = 30,
+            count = 125,
+        },  
+    },
+    { --calomel electrodes (salt production using mercury)
+        type = "technology",
+        name = "calomel-electrodes",
+        icon_size = 256, icon_mipmaps = 4,
+        icon = "__GnosticTest__/graphics/technology/calomel-electrodes.png",
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "salt-calomel",
+            },
+        },
+        prerequisites = {"cinnabar-processing", "salt-refining", "chemical-science-pack"},
+        unit = {
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
+            },
+            time = 30,
+            count = 75,
+        },
+    },
+    { --salt refining (salt production using evaporation)
+        type = "technology",
+        name = "salt-refining",
+        icon_size = 256, icon_mipmaps = 4,
+        icon = "__GnosticTest__/graphics/technology/salt-refining.png",
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "salt-evaporate",
+            },
+        },
+        prerequisites = {"oil-processing"},
+        unit = {
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+            },
+            time = 30,
+            count = 50,
+        },
+    },
 
 }
 )

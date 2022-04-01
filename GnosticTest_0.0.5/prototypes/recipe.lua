@@ -22,7 +22,7 @@ data:extend({
         type = "recipe",
         name = "liquid-mercury",
         category = "chemistry",
-        enabled = true,
+        enabled = false,
         energy_required = 3,
         ingredients = {
             {type = "item", name = "cinnabar", amount = 10},
@@ -38,11 +38,11 @@ data:extend({
             quaternary = {r = 74, g = 61, b = 61},
         },
     },
-    { --salt
+    { --salt using mercury (calomel-electrodes)
         type = "recipe",
-        name = "salt",
+        name = "salt-calomel",
         category = "chemistry",
-        enabled = true,
+        enabled = false,
         energy_required = 5,
         ingredients = {
             {type = "fluid", name = "water", amount = 100},
@@ -52,11 +52,33 @@ data:extend({
             {type = "item", name = "salt", amount = 5},
         },
         subgroup = "fluid-recipes",
+        icon = "__GnosticTest__/graphics/recipe/salt-calomel.png",
+        icon_size = 64, icon_mipmaps = 4,
         crafting_machine_tint = {
             primary = {r = 205, g = 210, b = 202},
             secondary = {r = 0, g = 105, b = 148},
             tertiary = {r = 112, g = 128, b = 144},
             quaternary = {r = 141, g = 166, b = 191},
+        },
+    },
+    { --salt using evaporation (salt-refining)
+        type = "recipe",
+        name = "salt-evaporate",
+        category = "chemistry",
+        enabled = false,
+        energy_required = 10,
+        ingredients = {
+            {type = "fluid", name = "water", amount = 150},
+        },
+        results = {
+            {type = "item", name = "salt", amount = 5},
+        },
+        subgroup = "fluid-recipes",
+        crafting_machine_tint = {
+            primary = {r = 214, g = 235, b = 255},
+            secondary = {r = 159, g = 207, b = 251},
+            tertiary = {r = 244, g = 229, b = 229},
+            quaternary = {r = 208, g = 224, b = 227},
         },
     },
     { --molten salt
@@ -101,15 +123,16 @@ data:extend({
         category = "centrifuging",
         ingredients = {
             {"depleted-molten-salt-fuel-cell", 5},
-        },
-        icon = "__GnosticTest__/graphics/molten-salt-reprocessing.png",
-        icon_size = 64, icon_mipmaps = 4,
-        subgroup = "intermediate-product",
-        order = "s[molten-salt-fuel-cell]-b[molten-salt-reprocessing]",
+        }, 
         main_product = "",
         results = {
             {"salt", 10}, {"uranium-238", 3},
         },
+        icon = "__GnosticTest__/graphics/recipe/molten-salt-reprocessing.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "intermediate-product",
+        order = "s[molten-salt-fuel-cell]-b[molten-salt-reprocessing]",
+        
         allow_decomposition = false,
     },
 
