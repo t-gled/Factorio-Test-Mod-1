@@ -85,7 +85,7 @@ data:extend({
         type = "recipe",
         name = "molten-salt",
         category = "chemistry",
-        enabled = true,
+        enabled = false,
         energy_required = 12,
         ingredients = {
             {type = "item", name = "salt", amount = 10},
@@ -105,7 +105,7 @@ data:extend({
         type = "recipe",
         name = "molten-salt-fuel-cell",
         category = "crafting-with-fluid",
-        enabled = true,
+        enabled = false,
         energy_required = 20,
         ingredients = {
             {type = "fluid", name = "molten-salt", amount = 100},
@@ -119,7 +119,7 @@ data:extend({
         type = "recipe",
         name = "molten-salt-reprocessing",
         energy_required = 75,
-        enabled = true,
+        enabled = false,
         category = "centrifuging",
         ingredients = {
             {"depleted-molten-salt-fuel-cell", 5},
