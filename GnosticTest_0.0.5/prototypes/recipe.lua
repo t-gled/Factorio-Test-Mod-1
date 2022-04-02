@@ -91,7 +91,7 @@ data:extend({
             {type = "item", name = "salt", amount = 10},
         },
         results = {
-            {type = "fluid", name = "molten-salt", amount = 10},
+            {type = "fluid", name = "molten-salt", amount = 15},
         },
         subgroup = "fluid-recipes",
         crafting_machine_tint = {
@@ -134,6 +134,30 @@ data:extend({
         order = "s[molten-salt-fuel-cell]-b[molten-salt-reprocessing]",
         
         allow_decomposition = false,
+    },
+    { --Downs cell sodium production from molten salt/ molten salt electrolysis
+        type = "recipe",
+        name = "downs-cell",
+        category = "chemistry",
+        enabled = false,
+        energy_required = 3.6,
+        ingredients = {
+            {type = "fluid", name = "molten-salt", amount = 20},
+            {type = "item", name = "iron-plate", amount = 1},
+        },
+        results = {
+            {type = "item", name = "sodium", amount = 10},
+            {type = "fluid", name = "chlorine", amount = 5},
+        },
+        subgroup = "fluid-recipes",
+        icon = "__GnosticTest__/graphics/recipe/downs-cell.png",
+        icon_size = 64, icon_mipmaps = 4,
+        crafting_machine_tint = {
+            primary = {r = 255, g = 147, b = 51},
+            secondary = {r = 155, g = 76, b = 16},
+            tertiary = {r = 255, g = 196, b = 0},
+            quaternary = {r = 255, g = 239, b = 0},
+        },
     },
 
 }

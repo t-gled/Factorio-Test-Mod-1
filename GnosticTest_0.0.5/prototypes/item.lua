@@ -83,6 +83,15 @@ data:extend({
         stack_size = 50,
         order = "r[uranium-processing]-i[molten-salt-fuel-cell]",
     },
+    { --sodium
+        type = "item",
+        name = "sodium",
+        icon = "__GnosticTest__/graphics/item/sodium.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "raw-material",
+        stack_size = 100,
+        order = "h[salt]-g[sodium]"
+    },
 
 }
 )

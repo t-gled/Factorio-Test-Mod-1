@@ -24,6 +24,17 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         order = "a[fluids]-h[molten-salt]",
     },
-
+    { --chlorine
+        type = "fluid",
+        name = "chlorine",
+        default_temperature = 25,
+        max_temperature =  800,
+        heat_capacity = "480J",
+        base_color = {r = 255, g = 255, b = 188},
+        flow_color = {r = 222, g = 255, b = 188},
+        icon = "__GnosticTest__/graphics/fluids/chlorine.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluids]-g[chlorine]",
+    },
 }
 )

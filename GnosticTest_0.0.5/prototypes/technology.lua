@@ -118,10 +118,8 @@ data:extend({
         icon_size = 256, icon_mipmaps = 4,
         icon = "__GnosticTest__/graphics/technology/molten-salt-tech.png",
         effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "molten-salt",
-            },
+            {type = "unlock-recipe", recipe = "molten-salt"},
+            {type = "unlock-recipe", recipe = "downs-cell"},
         },
         prerequisites = {"calomel-electrodes","production-science-pack"},
         unit = {
@@ -166,7 +164,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "molten-salt-reprocessing",
+                 recipe = "molten-salt-reprocessing"
             },
         },
         prerequisites = {"advanced-nuclear-fuels", "nuclear-fuel-reprocessing"},
