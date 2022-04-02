@@ -159,7 +159,6 @@ data:extend({
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
   },
-
   { --nuclear inserter
     type = "inserter",
     name = "nuclear-inserter",
