@@ -1,10 +1,10 @@
 
 data:extend({
 
-  { -- NUCLEAR FURNACE
+  { --nuclear furnace
     type = "furnace",
     name = "nuclear-furnace",
-    icon = "__GnosticTest__/graphics/entity/nuclear-furnace/nuclear-furnace-icon.png",
+    icon = "__GnosticTest__/graphics/item/nuclear-furnace-icon.png",
     icon_size = 64, icon_mipmaps = 4,
     order = "c",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
@@ -160,10 +160,10 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
   },
 
-  { --Nuclear Inserter
+  { --nuclear inserter
     type = "inserter",
     name = "nuclear-inserter",
-    icon = "__GnosticTest__/graphics/entity/nuclear-inserter/nuclear-inserter-icon.png",
+    icon = "__GnosticTest__/graphics/item/nuclear-inserter-icon.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     stack = true,
@@ -255,6 +255,126 @@ data:extend({
     circuit_connector_sprites = circuit_connector_definitions["inserter"].sprites,
     circuit_wire_max_distance = inserter_circuit_wire_max_distance,
     default_stack_control_input_signal = inserter_default_stack_control_input_signal
-  }
+  },
+  { --biolab
+    type = "assembling-machine",
+    name = "biolab",
+    icon = "__GnosticTest__/graphics/item/biolab-icon.png",
+    icon_size = 64, icon_mipmaps = 4,
+    flags = {"placeable-player", "player-creation"},
+    minable = {mining_time = 0.2, result = "lab"},
+    max_health = 150,
+    corpse = "lab-remnants",
+    dying_explosion = "lab-explosion",
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    working_visualisations =
+    {
+      {
+        animation = {
+          layers =
+          {
+            {
+              filename = "__GnosticTest__/graphics/entity/biolab/biolab-base.png",
+              width = 98,
+              height = 87,
+              frame_count = 33,
+              line_length = 11,
+              animation_speed = 1 / 3,
+              shift = util.by_pixel(0, 1.5),
+            },
+            {
+              filename = "__GnosticTest__/graphics/entity/biolab/biolab-integration.png",
+              width = 122,
+              height = 81,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 33,
+              animation_speed = 1 / 3,
+              shift = util.by_pixel(0, 15.5),
+            },
+            {
+              filename = "__GnosticTest__/graphics/entity/biolab/biolab-light.png",
+              blend_mode = "additive",
+              draw_as_light = true,
+              width = 106,
+              height = 100,
+              frame_count = 33,
+              line_length = 11,
+              animation_speed = 1 / 3,
+              shift = util.by_pixel(-1, 1),
+            },
+            {
+              filename = "__GnosticTest__/graphics/entity/biolab/biolab-shadow.png",
+              width = 122,
+              height = 68,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 33,
+              animation_speed = 1 / 3,
+              shift = util.by_pixel(13, 11),
+              draw_as_shadow = true,
+            },
+          },
+        },
+      },
+    },
+    animation =
+    {
+      layers =
+      {
+        {
+          filename = "__GnosticTest__/graphics/entity/biolab/biolab-base.png",
+          width = 98,
+          height = 87,
+          frame_count = 1,
+          shift = util.by_pixel(0, 1.5),
+        },
+        {
+          filename = "__GnosticTest__/graphics/entity/biolab/biolab-integration.png",
+          width = 122,
+          height = 81,
+          frame_count = 1,
+          shift = util.by_pixel(0, 15.5),
+        },
+        {
+          filename = "__GnosticTest__/graphics/entity/biolab/biolab-shadow.png",
+          width = 122,
+          height = 68,
+          frame_count = 1,
+          shift = util.by_pixel(13, 11),
+          draw_as_shadow = true,
+        }
+      }
+    },
+    working_sound =
+    {
+      sound =
+      {
+        filename = "__base__/sound/lab.ogg",
+        volume = 0.7
+      },
+      audible_distance_modifier = 0.7,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input"
+    },
+    crafting_speed = 0.5,
+    crafting_categories = {"biology"},
+    energy_usage = "60kW",
+    module_specification =
+    {
+      module_slots = 2,
+      module_info_icon_shift = {0, 0.9}
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+  },
+
 }
 )

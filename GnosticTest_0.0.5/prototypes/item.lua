@@ -3,7 +3,7 @@ data:extend({
     { --nuclear furnace
         type = "item",
         name = "nuclear-furnace",
-        icon = "__GnosticTest__/graphics/entity/nuclear-furnace/nuclear-furnace-icon.png",
+        icon = "__GnosticTest__/graphics/item/nuclear-furnace-icon.png",
         icon_size = 64, icon_mipmaps = 4,
         subgroup = "smelting-machine",
         place_result = "nuclear-furnace",
@@ -13,7 +13,7 @@ data:extend({
     { --nuclear inserter
         type = "item",
         name = "nuclear-inserter",
-        icon = "__GnosticTest__/graphics/entity/nuclear-inserter/nuclear-inserter-icon.png",
+        icon = "__GnosticTest__/graphics/item/nuclear-inserter-icon.png",
         icon_size = 64, icon_mipmaps = 4,
         subgroup = "inserter",
         place_result = "nuclear-inserter",
@@ -91,6 +91,16 @@ data:extend({
         subgroup = "raw-material",
         stack_size = 100,
         order = "h[salt]-g[sodium]"
+    },
+    { --biolab
+        type = "item",
+        name = "biolab",
+        icon = "__GnosticTest__/graphics/item/biolab-icon.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "production-machine",
+        place_result = "biolab",
+        stack_size = 50,
+        order = "l",
     },
 
 }
