@@ -90,7 +90,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         subgroup = "raw-material",
         stack_size = 100,
-        order = "h[salt]-g[sodium]"
+        order = "h[salt]-g[sodium]",
     },
     { --biolab
         type = "item",
@@ -101,6 +101,24 @@ data:extend({
         place_result = "biolab",
         stack_size = 50,
         order = "l",
+    },
+    { --offal
+        type = "item",
+        name = "offal",
+        icon = "__GnosticTest__/graphics/item/offal.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "raw-material",
+        stack_size = 100,
+        order = "h[salt]-j[organic-slop]",
+    },
+    { --fish bones
+        type = "item",
+        name = "fish-bones",
+        icon = "__GnosticTest__/graphics/item/fish-bones.png",
+        icon_size =64, icon_mipmaps = 4,
+        subgroup = "raw-material",
+        stack_size = 100,
+        order = "h[salt]-i[fish-bones]"
     },
 
 }

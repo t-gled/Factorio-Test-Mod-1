@@ -159,6 +159,32 @@ data:extend({
             quaternary = {r = 255, g = 239, b = 0},
         },
     },
-
+    { --biolab
+    type = "recipe",
+    name = "biolab",
+    enabled = false,
+    ingredients = {
+        {"iron-plate", 10}, {"copper-cable", 5}, {"electronic-circuit", 10},
+    },
+    result = "biolab",
+    },
+    { --offal / fish bones (fish liquefaction)
+        type = "recipe",
+        name = "fish-liquefaction",
+        category = "biology",
+        enabled = false,
+        energy_required = 1,
+        ingredients = {
+            {type = "item", name = "raw-fish", amount = 1},
+        },
+        results ={
+            {type = "item", name = "offal", amount = 5},
+            {type = "item", name = "fish-bones", amount = 1},
+        },
+        icon = "__GnosticTest__/graphics/recipe/fish-liquefaction.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "raw-material",
+        order = "h[fish-liquefaction]",
+    },
 }
 )

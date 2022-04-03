@@ -164,7 +164,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                 recipe = "molten-salt-reprocessing"
+                recipe = "molten-salt-reprocessing"
             },
         },
         prerequisites = {"advanced-nuclear-fuels", "nuclear-fuel-reprocessing"},
@@ -179,6 +179,24 @@ data:extend({
             count = 75,
         },
     },
-
+    { --biolab
+        type = "technology",
+        name = "biology",
+        icon_size = 256, icon_mipmaps = 4,
+        icon = "__GnosticTest__/graphics/technology/biology.png",
+        effects = {
+            {type = "unlock-recipe", recipe = "biolab"},
+            {type = "unlock-recipe", recipe = "fish-liquefaction"},
+        },
+        prerequisites = {"research-speed-1"},
+        unit = {
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+            },
+            time = 30,
+            count = 100,
+        },
+    },
 }
 )
