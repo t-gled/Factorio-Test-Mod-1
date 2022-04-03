@@ -120,6 +120,15 @@ data:extend({
         stack_size = 100,
         order = "h[salt]-i[fish-bones]"
     },
+    { --biological waste
+        type = "item",
+        name = "biological-waste",
+        icon = "__GnosticTest__/graphics/item/biological-waste.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "raw-material",
+        stack_size = 100,
+        order = "f[biological-waste]",
+    },
 
 }
 )

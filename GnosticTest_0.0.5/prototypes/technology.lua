@@ -187,6 +187,7 @@ data:extend({
         effects = {
             {type = "unlock-recipe", recipe = "biolab"},
             {type = "unlock-recipe", recipe = "fish-liquefaction"},
+            {type = "unlock-recipe", recipe = "offal-separation"},
         },
         prerequisites = {"research-speed-1"},
         unit = {

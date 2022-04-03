@@ -186,5 +186,29 @@ data:extend({
         subgroup = "raw-material",
         order = "h[fish-liquefaction]",
     },
+    { --biological waste / fish extract
+        type = "recipe",
+        name = "offal-separation",
+        category = "chemistry",
+        enabled = false,
+        energy_required = 20,
+        main_product = "fish-extract",
+        ingredients = {
+            {type = "item", name = "offal", amount = 50},
+        },
+        results = {
+            {type = "fluid", name = "fish-extract", amount = 500},
+            {type = "item", name = "biological-waste", amount = 50},
+        },
+        subgroup = "fluid-recipes",
+        order = "c[fish-extract]",
+        crafting_machine_tint = {
+            primary = {r = 250, g = 128, b = 114},
+            secondary = {r = 249, g = 106, b = 89},
+            tertiary = {r = 240, g = 128, b = 128},
+            quaternary = {r = 246, g = 178, b = 178},
+        },
+
+    },
 }
 )
