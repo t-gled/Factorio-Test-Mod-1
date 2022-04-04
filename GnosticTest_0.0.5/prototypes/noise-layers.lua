@@ -4,10 +4,10 @@ data:extend({
     type = "noise-layer",
     name = "cinnabar",
   },
-  -- { --geothermal vents
-  --   type = "noise-layer",
-  --   name = "geothermal-vent",
-  -- },
+  { --geothermal vents
+    type = "noise-layer",
+    name = "geothermal-vent",
+  },
 
 }
 )
