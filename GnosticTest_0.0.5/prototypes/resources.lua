@@ -66,7 +66,7 @@ data:extend({
         minable = {
             mining_time = 1,
             results = {
-                    {type = "fluid", name = "steam", amount_min = 20, amount_max = 30, probability = 1, default_temperature = 200},            },
+                    {type = "fluid", name = "steam", amount_min = 20, amount_max = 30, probability = 1, temperature = 200},            },
         },
         collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
