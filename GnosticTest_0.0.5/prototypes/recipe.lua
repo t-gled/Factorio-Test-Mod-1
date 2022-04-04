@@ -210,5 +210,28 @@ data:extend({
         },
 
     },
+    { --water electrolysis (hydrogen and oxygen)
+        type = "recipe",
+        name = "water-electrolysis",
+        category = "chemistry",
+        enabled = true,
+        energy_required = 8,
+        ingredients = {
+            {type = "fluid", name = "water", amount = 20},
+        },
+        results = {
+            {type = "fluid", name = "hydrogen", amount = 10},
+            {type = "fluid", name = "oxygen", amount = 10}
+        },
+        icon = "__GnosticTest__/graphics/recipe/water-electrolysis.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "fluid-recipes",
+        crafting_machine_tint = {
+            primary = {r = 82, g = 180, b = 217},
+            secondary = {r = 98, g = 171, b = 199},
+            tertiary = {r = 201, g = 208, b = 209},
+            quaternary = {r = 210, g = 219, b = 220},
+        },
+    },
 }
 )

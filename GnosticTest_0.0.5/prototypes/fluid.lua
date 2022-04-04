@@ -48,5 +48,29 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         order = "a[fluids]-h[fish-extract]"
     },
+    { --oxygen
+        type = "fluid",
+        name = "oxygen",
+        default_temperature = 25,
+        max_temperature = 800,
+        heat_capacity = "920J",
+        base_color = {r = 111, g = 192, b = 219},
+        flow_color = {r = 119, g = 192, b = 216},
+        icon = "__GnosticTest__/graphics/fluids/oxygen.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluids]-g[oxygen]",
+    },
+    { --hydrogen
+        type = "fluid",
+        name = "hydrogen",
+        default_temperature = 25,
+        max_temperature = 800,
+        heat_capacity = "14300J",
+        base_color = {r = 224, g = 242, b = 234},
+        flow_color = {r = 224, g = 242, b = 234},
+        icon = "__GnosticTest__/graphics/fluids/hydrogen.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluids]-g[hydrogen]",
+    },
 }
 )
