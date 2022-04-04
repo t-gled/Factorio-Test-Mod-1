@@ -233,5 +233,15 @@ data:extend({
             quaternary = {r = 210, g = 219, b = 220},
         },
     },
+    { --geothermal derrick
+        type = "recipe",
+        name = "geothermal-derrick",
+        enabled = false,
+        ingredients = {
+            {"steel-plate", 5}, {"iron-gear-wheel", 10}, {"electronic-circuit", 5}, {"pipe", 10},
+        },
+        result = "geothermal-derrick",
+    },
+
 }
 )

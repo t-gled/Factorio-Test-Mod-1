@@ -48,24 +48,25 @@ data:extend({
     { --geothermal vent (steam) / geyser
         type = "resource",
         name = "geothermal-vent",
-        icon = "__GnosticTest__/graphics/resources/geothermal-vent/geothermal-vent-icon-placeholder.png",
+        icon = "__GnosticTest__/graphics/resources/geothermal-vent/geothermal-vent-icon.png",
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral"},
-        category = "basic-fluid",
+        category = "geothermal-vent",
         subgroup = "raw-resource",
-        order = "a-b-c",
+        order = "c-a",
+        has_starting_area_placement = true,
         infinite = true,
         highlight = true,
-        minimum = 80000,
+        minimum = 160000,
         normal = 500000,
-        infinite_depletion_amount = 10,
+        infinite_depletion_amount = 6,
         resource_patch_search_radius = 12,
         tree_removal_probability = 0.7,
         tree_removal_max_distance = 32 * 32,
         minable = {
             mining_time = 1,
             results = {
-                    {type = "fluid", name = "steam", amount_min = 20, amount_max = 20, probability = 1, default_temperature = 200},            },
+                    {type = "fluid", name = "steam", amount_min = 20, amount_max = 30, probability = 1, default_temperature = 200},            },
         },
         collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
@@ -76,8 +77,8 @@ data:extend({
             max_probability = 0.0075,
             richness_base = 130000,
             richness_multiplier = 300000,
-            richness_multiplier_distance_bonus = 1300,
-            coverage = 0.0004, -- Cover on average 0.2% of surface area.
+            richness_multiplier_distance_bonus = 2000,
+            coverage = 0.0004,
             peaks =
             {
             {
@@ -90,7 +91,7 @@ data:extend({
         stage_counts = {0},
         stages  ={
             sheet = {
-                filename = "__GnosticTest__/graphics/resources/geothermal-vent/geothermal-vent-placeholder.png",
+                filename = "__GnosticTest__/graphics/resources/geothermal-vent/geothermal-vent.png",
                 priority = "extra-high",
                 width = 74,
                 height = 60,
