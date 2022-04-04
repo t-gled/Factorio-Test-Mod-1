@@ -4,8 +4,7 @@
 
 <!-- ABOUT -->
 ## About
-First test mod for the game 'Factorio.'
-Adds a bunch of random stuff created in the process of me learning LUA and the Factorio API.
+A `Factorio` mod which adds new items, ores, and technologies that tend to be biological or nuclear themed.
 
 ### Built With
 * [Lua](https://www.lua.org/)
